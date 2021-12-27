@@ -1,0 +1,2 @@
+# ignews
+ practicing next.js
