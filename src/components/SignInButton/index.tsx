@@ -6,12 +6,16 @@ import { signIn, useSession, signOut } from 'next-auth/react';
 export function SignInButton() {
 
     const { data } = useSession();
-
+    console.log("data");
+    console.log(data);
     return data ? (
         <button 
             type="button"
             className={styles.signInButton}
-            onClick={()=>signOut()}
+            onClick={()=>{
+                console.log("clicou no botão")
+                signOut()
+            }}
             >
             <FaGithub color="#04D361"/>
             {data.user.name}
