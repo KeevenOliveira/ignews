@@ -8,6 +8,14 @@ export function SignInButton() {
     const { data } = useSession();
     console.log("data");
     console.log(data);
+    console.log("environment variables:")
+    console.log(process.env.GITHUB_CLIENT_ID);
+    console.log(process.env.GITHUB_CLIENT_SECRET);
+    console.log("SECRET: ");
+    console.log(process.env.SECRET);
+
+    console.log(process.env.NEXTAUTH_URL);
+    console.log(process.env.VERCEL_URL);
     return data ? (
         <button 
             type="button"
