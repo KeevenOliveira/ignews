@@ -8,6 +8,7 @@ export function SignInButton() {
     const { data } = useSession();
     console.log("data");
     console.log(data);
+    console.log("T29d91s5PC+GlG4MhStgwmghgkVRQq2+rsQAb0qkkko");
     console.log("environment variables:")
     console.log(process.env.GITHUB_CLIENT_ID);
     console.log(process.env.GITHUB_CLIENT_SECRET);
