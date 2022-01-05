@@ -12,10 +12,7 @@ export function SignInButton() {
         <button 
             type="button"
             className={styles.signInButton}
-            onClick={()=>{
-                console.log("clicou no botão")
-                signOut()
-            }}
+            onClick={()=>signOut()}
             >
             <FaGithub color="#04D361"/>
             {data.user.name}
